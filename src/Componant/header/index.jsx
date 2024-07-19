@@ -67,7 +67,7 @@ function Header(props) {
                 <div className='absolute left-5 top-24 flex flex-col gap-5 items-center'>
                  <TriStateSwitch label="Language" />
                  <Logout/>
-      <Link
+                 <Link
                             className={({ isActive }) => isActive ? `${style.active}  text-Blueblack self-center font-bold text-[14px]` : "text-Blueblack self-center font-bold text-[14px]"}
                             to='/dashboard'
                         >
