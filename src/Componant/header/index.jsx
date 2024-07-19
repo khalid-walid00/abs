@@ -11,7 +11,7 @@ function Header(props) {
 
     return (
         <>
-            <div className='flex sticky top-0 bg-white justify-center relative z-[999999999]'>
+            <div className='flex sticky top-0 bg-white justify-center  z-[999999999]'>
                 <div className='flex justify-between w-full lg:w-[94.8%] xl:w-10/12 py-2'>
                     <img className='xl:w-80 w-64' alt="logo" src={require("../../media/images/logo.png")} />
                     <div className='hidden gap-4 lg:flex xl:flex 2xl:flex'>
