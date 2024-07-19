@@ -24,7 +24,7 @@ function Inspections(props) {
 
 return (
     <>
-      <section className=" section1">
+      <section className=" overflow-x-hidden section1">
         <div className=" h-max bg-thirdColor flex justify-center rounded-[87px]">
           <div className=" w-11/12 ">
             <div className=" relative">
