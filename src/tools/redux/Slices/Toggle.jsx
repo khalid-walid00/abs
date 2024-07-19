@@ -2,7 +2,7 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-    sideBar: true,
+    sideBar: false,
   };
   
 const toggleSlice = createSlice({
