@@ -49,7 +49,7 @@ function Dashboard(props) {
     </div>
     </div>
     <div className="flex justify-center h-full mt-20">
-      <div className=" w-10/12 h-3/6">
+      <div className=" lg:w-10/12 h-3/6">
    <Analysis/>
    </div>
    </div>
