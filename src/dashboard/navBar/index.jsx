@@ -17,6 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useDispatch, useSelector } from 'react-redux';
 import { SideBar } from '../../tools/redux/Slices/Toggle';
+import SideBarDash from '../sideBar';
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -162,8 +163,10 @@ export default function NavBarDash() {
   );
 
   return (
-    <Box sx={{ flexGrow: 1, zIndex: 9999999, backgroundColor: 'transparent' }}>
-      <AppBar position="sticky" sx={{ backgroundColor: 'transparent', borderBottom: '2px solid rgba(0, 0, 0, 0.05)', color: '#000000', boxShadow: 'none' }}>
+    <>
+    <Box sx={{ flexGrow: 1, zIndex: 9999999, backgroundColor: 'white',position: 'sticky', top: 0 }}>
+      <AppBar position="sticky"
+       sx={{ backgroundColor: 'transparent', borderBottom: '2px solid rgba(0, 0, 0, 0.05)', color: '#000000', boxShadow: 'none',position: 'sticky', top: 0 }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -192,5 +195,6 @@ export default function NavBarDash() {
       {renderMobileMenu}
       {renderMenu}
     </Box>
-  );
+      <div className='fixed z-[9999]'><SideBarDash/></div>
+  </>);
 }

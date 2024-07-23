@@ -14,6 +14,10 @@ import Dashboard from "./dashboard/page";
 import LayoutDash from "./dashboard/layout";
 import ProfileDash from "./dashboard/profile/page";
 import AboutDash from "./dashboard/about/page";
+import GalleryDash from "./dashboard/gallary/page";
+import TrainingDash from "./dashboard/traning/page";
+import ApprovalDash from "./dashboard/approvall/page";
+import ContactUsDash from "./dashboard/contactUs/page";
 
 function App() {
   const location = useLocation();
@@ -34,6 +38,10 @@ function App() {
         <Route index element={<Dashboard />} />
         <Route path="profile" element={<ProfileDash/>} />
         <Route path="About" element={<AboutDash/>} />
+        <Route path="gallery" element={<GalleryDash/>} />
+        <Route path="training" element={<TrainingDash/>} />
+        <Route path="approvals" element={<ApprovalDash/>} />
+        <Route path="contact" element={<ContactUsDash/>} />
 
 
         </Route>

@@ -21,8 +21,8 @@ export default function Logout() {
     <Box sx={{ zIndex: 999999999 }}>
       <Grid container justifyContent="center">
         <Grid item>
-          <Tooltip 
-            title="login"
+          <Tooltip
+            title={cookie.get("access") ? "login": "logout"}
             arrow 
             placement="top"
             PopperProps={{

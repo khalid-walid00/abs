@@ -4,10 +4,10 @@ import Article from "../componants/edits/Articl/index";
 import SaveButton from "../componants/edits/Btn";
 function AboutDash(props) {
   return (
-    <div className="bg-white shadow-custom drop-shadow-lg h-full w-full rounded-[14px] p-8">
+    <div className="bg-white shadow-custom drop-shadow-lg h-full w-full rounded-[14px] md:p-8 p-4">
       {/* section 1 */}
-      <div className=" flex justify-between gap-12">
-        <div className=" w-1/3">
+      <div className=" flex md:flex-row flex-col-reverse  justify-between gap-12">
+        <div className=" md:w-1/3">
           <Article
             rows={15}
             title="Company profile"
@@ -17,21 +17,21 @@ function AboutDash(props) {
             editTitle={false}
           />
         </div>
-        <div className=" w-2/3">
+        <div className=" md:w-2/3">
           <ImgAndTitle img={require("../../media/images/about/head.png")} />
         </div>
       </div>
 
       {/* section 2 */}
 
-      <div className=" flex justify-between my-10">
-        <div className=" w-1/5">
+      <div className=" flex sm:flex-row flex-col items-center sm:items-start justify-between my-10">
+        <div className=" sm:w-1/5 w-4/5">
           <ImgAndTitle
             EditColor="black"
             img={require("../../media/images/about/manager.png")}
           />
         </div>
-        <div className=" w-3/5">
+        <div className="sm:w-3/5 w-full">
           <Article
             rows={8}
             title="Company profile"
@@ -61,14 +61,14 @@ function AboutDash(props) {
 
 
     {/* section 4 */}
-    <div className=" flex justify-between">
+    <div className=" flex md:flex-row flex-col-reverse items-center md:items-start justify-between">
 
-     <div  className=" w-7/12">
+     <div  className=" md:w-7/12 w-full">
      {[...Array(8)].map((_, index) => (<ul>
         <li> <Article title={<div className=" text-[12px]">Impartiality {index + 1}</div>} rows={1}/></li>
      </ul>))}
      </div>
-     <div className=" w-5/12">
+     <div className=" md:w-5/12 w-8/12">
      <ImgAndTitle
             EditColor="black"
             img={require("../../media/images/about/loader.png")}
