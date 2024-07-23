@@ -3,18 +3,16 @@ import NavBarDash from './navBar';
 import SideBarDash from './sideBar';
 import { Outlet } from 'react-router';
 import { useSelector } from 'react-redux';
-
+import "./style.css"
 function LayoutDash(props) {
     const { sideBar } = useSelector((state) => state.Toggle);
 
     return (
     <div className='flex h-full'>
-      <div className={` duration-200 transition-all ${sideBar ? 'w-2/12' : 'w-0'}`}>
-        <SideBarDash/>
-      </div>
-      <div className={` duration-200 transition-all ${sideBar ? 'w-10/12' : 'w-full'} z-[999999]`}>
+
+      <div className={` duration-200 transition-all w-full`}>
         <NavBarDash/>
-        <div className='px-8 py-20 '>
+        <div className='md:px-8  px-2 pb-20 pt-8 '>
           <Outlet/>
           
         </div>

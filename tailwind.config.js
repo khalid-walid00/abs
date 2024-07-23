@@ -7,6 +7,7 @@ module.exports = {
         mainColor:'#024160',
         secoundColor:'#11B5EA',
         secoundColor40:"rgba(17, 181, 234, 0.4)", 
+        blueGreen:"#0088b5 ",
         thirdColor:"#EDEDED",
         overColor:"#DEDEDE",
         darkBlue:"#203908",
@@ -20,6 +21,7 @@ module.exports = {
         green:"#00B69B",
         yellowGray:"#F5F5F5",
       Grayblack:"#F5F6FA",
+      blockColor:"#e5e7eb"
       },
       boxShadow: {
         'custom': '0px 4px 10px rgba(0, 0, 0, 0.1)',

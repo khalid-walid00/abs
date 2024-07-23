@@ -78,14 +78,15 @@ export default function SideBarDash() {
     href:"/login"
   }
 ]
-  const DrawerList = (
-    <Box sx={{ width: 255,padding:"10px", overflow: 'hidden',height:"100vh" }} role="presentation">
 
-      <img src={require('../../media/images/logo.png')} className='mb-3' alt="logo" />
-      <SideList items={dataDrawerOne}/>
-      <div className=' flex justify-center'>
-  <div className='w-8/12 p-2 font-bold text-gray text-[12px] '>PAGES</div>
-  </div>
+  return (
+    <Box  sx={{ width: 255,padding:"10px", overflow: 'hidden',height:"100vh",position:"fixed",backgroundColor:"white", left: sideBar ? 0 :"-300px" , }} className=' transition-all duration-300' role="presentation">
+
+    <img src={require('../../media/images/logo.png')} className='mb-3' alt="logo" />
+    <SideList items={dataDrawerOne}/>
+    <div className=' flex justify-center'>
+<div className='w-8/12 p-2 font-bold text-gray text-[12px] '>PAGES</div>
+</div>
 
 {/* secound list */}
 
@@ -101,21 +102,6 @@ export default function SideBarDash() {
 <div className=' w-[434px] h-[535px] rounded-full bg-opacity-60 bg-secoundColor blur-xl absolute top-14 right-0'></div>
 </div>
 
-    </Box>
-  );
-
-  return (
-    <Drawer
-      sx={{
-        '& .MuiDrawer-paper': {
-          boxShadow: '0px 1px 2px rgba(0, 0, 0, 0.2)', // Adding a shadow
-          borderRight: '1px solid rgba(0, 0, 0, 0.12)',
-        },
-      }}
-      BackdropProps={{ invisible: true }}
-      open={sideBar}
-    >
-      {DrawerList}
-    </Drawer>
+  </Box>
   );
 }

@@ -37,8 +37,8 @@ function Dashboard(props) {
     return (
    <div className="bg-white h-screen">
     <div className="flex justify-center">
-      <div className=" w-10/12">
-    <div className=" grid grid-cols-4 gap-8">
+      <div className=" lg:w-10/12 w-full">
+    <div className=" grid md:grid-cols-4  gap-2 lg:gap-8">
    
    {dataCardAnalysis.map((item)=> <CardDataAnalysis title={item.title} count={item.count} icon={item.icon} 
    date={item.date} present={item.present}/>)} 
