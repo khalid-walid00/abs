@@ -14,7 +14,7 @@ function Header(props) {
             <div className='flex sticky top-0 bg-white justify-center  z-[999999999]'>
                 <div className='flex justify-between w-full lg:w-[94.8%] xl:w-10/12 py-2'>
                     <img className='xl:w-80 w-64' alt="logo" src={require("../../media/images/logo.png")} />
-                    <div className='hidden gap-4 lg:flex xl:flex 2xl:flex'>
+                    <div className='hidden gap-3 lg:flex xl:flex 2xl:flex'>
                         <NavLink
                             className={({ isActive }) => isActive ? `${style.active} text-Blueblack self-center font-bold text-[14px]` : "text-Blueblack self-center font-bold text-[14px]"}
                             to='/'
